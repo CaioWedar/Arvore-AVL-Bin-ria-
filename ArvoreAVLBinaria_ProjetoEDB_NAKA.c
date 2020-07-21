@@ -1,6 +1,3 @@
-/*Nome: Caio Alve Fagundes  RA: 19668771*/
-/*Nome: Haniel Biazon       RA: 18011643*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -84,14 +81,14 @@ int main()
             printf("2.Excluir\n");
             printf("3.Media dos valores\n");
             printf("4.Percurso da arvore\n");
-            printf("5.Contagem de nÛs\n");
-            printf("6.Largura da ·rvore\n");
-            printf("7.Altura da ·rvore\n");
+            printf("5.Contagem de n√≥s\n");
+            printf("6.Largura da √°rvore\n");
+            printf("7.Altura da √°rvore\n");
             printf("8.Consultar o maior numero\n");
             printf("9.Consultar o menor numero\n");
-            printf("10.Consultar se as ·rvores s„o iguais\n");
-            printf("11.Consultar se as ·rvores s„o similares\n");
-            printf("12.Consultar se as ·rvores s„o simetricas\n");
+            printf("10.Consultar se as √°rvores s√£o iguais\n");
+            printf("11.Consultar se as √°rvores s√£o similares\n");
+            printf("12.Consultar se as √°rvores s√£o simetricas\n");
             printf("13.Consultar se o valor se encontra em alguma ou nas duas arvores\n");
             printf("0.Sair\n");
             scanf("%d", &opcaoMenu);
@@ -151,21 +148,21 @@ int main()
                     {
                         totalMedia = mediaTotal(raiz1);
                         media = totalMedia/quant1;
-                        printf("%.2f È total aproximado da mÈdia\n", media);
+                        printf("%.2f √© total aproximado da m√©dia\n", media);
                     }
                     else if(flagRaiz == 2)
                     {
                         totalMedia = mediaTotal(raiz2);
                         media = totalMedia/quant2;
-                        printf("%.2f È total aproximado da mÈdia\n", media);
+                        printf("%.2f √© total aproximado da m√©dia\n", media);
                     }
                     system("pause");
                     system("cls");
                     break;
                 case 4:
                     printf("1. Percurso em ordem\n");
-                    printf("2. Percurso em prÈ ordem\n");
-                    printf("3. Percurso em pÛs ordem\n");
+                    printf("2. Percurso em pr√© ordem\n");
+                    printf("3. Percurso em p√≥s ordem\n");
                     printf("Qual percusro deseja fazer?: \n");
                     scanf("%d", &opcaoPercurso);
                     switch(opcaoPercurso)
@@ -207,10 +204,10 @@ int main()
                     system("cls");
                     break;
                 case 5:
-                    printf("1.Total de nÛs com um filho\n");
-                    printf("2.Total de nÛs com dois filhos\n");
-                    printf("3.Total de nÛs\n");
-                    printf("4.Total de nÛs folhas\n");
+                    printf("1.Total de n√≥s com um filho\n");
+                    printf("2.Total de n√≥s com dois filhos\n");
+                    printf("3.Total de n√≥s\n");
+                    printf("4.Total de n√≥s folhas\n");
                     scanf("%d", &opcaoContagem);
                     system("cls");
                     switch(opcaoContagem)
@@ -219,12 +216,12 @@ int main()
                         if(flagRaiz == 1)
                         {
                             totalContagem = umFilho(raiz1);
-                            printf("%d È o total de nÛs com um filho\n", totalContagem);
+                            printf("%d √© o total de n√≥s com um filho\n", totalContagem);
                         }
                         else if(flagRaiz == 2)
                         {
                             totalContagem = umFilho(raiz2);
-                            printf("%d È o total de nÛs com um filho\n", totalContagem);
+                            printf("%d √© o total de n√≥s com um filho\n", totalContagem);
                         }
                         system("pause");
                         break;
@@ -232,12 +229,12 @@ int main()
                         if(flagRaiz == 1)
                         {
                             totalContagem = doisFilhos(raiz1);
-                            printf("%d È o total de nÛs com dois filhos\n", totalContagem);
+                            printf("%d √© o total de n√≥s com dois filhos\n", totalContagem);
                         }
                         else if(flagRaiz == 2)
                         {
                             totalContagem = doisFilhos(raiz2);
-                            printf("%%d È o total de nÛs com dois filhos\n", totalContagem);
+                            printf("%%d √© o total de n√≥s com dois filhos\n", totalContagem);
                         }
                         system("pause");
                         break;
@@ -250,7 +247,7 @@ int main()
                                 break;
                             }
                             totalContagem = totalNos(raiz1);
-                            printf("%d È o total de nÛs\n", totalContagem);
+                            printf("%d √© o total de n√≥s\n", totalContagem);
                         }
                         else if(flagRaiz == 2)
                         {
@@ -260,7 +257,7 @@ int main()
                                 break;
                             }
                             totalContagem = totalNos(raiz2);
-                            printf("%d È o total de nÛs\n", totalContagem);
+                            printf("%d √© o total de n√≥s\n", totalContagem);
                         }
                         system("pause");
                         break;
@@ -268,12 +265,12 @@ int main()
                         if(flagRaiz == 1)
                         {
                             totalContagem = totalFolhas(raiz1);
-                            printf("%d È o total de folhas\n", totalContagem);
+                            printf("%d √© o total de folhas\n", totalContagem);
                         }
                         else if(flagRaiz == 2)
                         {
                             totalContagem = totalFolhas(raiz2);
-                            printf("%d È o total de folhas\n", totalContagem);;
+                            printf("%d √© o total de folhas\n", totalContagem);;
                         }
                         system("pause");
                         break;
@@ -296,12 +293,12 @@ int main()
                     if(flagRaiz == 1)
                     {
                         totalAlt = altura(raiz1);
-                        printf("A altura total È %d\n", totalAlt);
+                        printf("A altura total √© %d\n", totalAlt);
                     }
                     else if(flagRaiz == 2)
                     {
                         totalAlt = altura(raiz2);
-                        printf("A altura total È %d\n", totalAlt);
+                        printf("A altura total √© %d\n", totalAlt);
                     }
                     system("pause");
                     system("cls");
@@ -317,8 +314,8 @@ int main()
                         total = consultaMaior(raiz2);
                     }
                     if(total == 0)
-                        printf("A ·rvore est· vazia\n");
-                    else printf("%d È o maior numero \n", total);
+                        printf("A √°rvore est√° vazia\n");
+                    else printf("%d √© o maior numero \n", total);
                     system("pause");
                     system("cls");
                     break;
@@ -332,8 +329,8 @@ int main()
                         total = consultaMenor(raiz2);
                     }
                     if(total == 0)
-                        printf("A ·rvore est· vazia\n");
-                    else printf("%d È o menor numero \n", total);
+                        printf("A √°rvore est√° vazia\n");
+                    else printf("%d √© o menor numero \n", total);
                     system("pause");
                     system("cls");
                     break;
@@ -341,12 +338,12 @@ int main()
                     verificaRaiz = arvoreIguais(raiz1, raiz2);
                     if(verificaRaiz == 0)
                     {
-                        printf("As raizes n„o s„o iguais\n");
+                        printf("As raizes n√£o s√£o iguais\n");
                         system("pause");
                     }
                     else if (verificaRaiz == 1)
                     {
-                        printf("As raizes s„o iguais\n");
+                        printf("As raizes s√£o iguais\n");
                         system("pause");
                     }
                     system("cls");
@@ -355,12 +352,12 @@ int main()
                     verificaRaiz = arvoresSimilares(raiz1, raiz2);
                     if(verificaRaiz == 0)
                     {
-                        printf("As raizes n„o s„o similares\n");
+                        printf("As raizes n√£o s√£o similares\n");
                         system("pause");
                     }
                     else if (verificaRaiz == 1)
                     {
-                        printf("As raizes s„o similares\n");
+                        printf("As raizes s√£o similares\n");
                         system("pause");
                     }
                     system("cls");
@@ -369,12 +366,12 @@ int main()
                     verificaRaiz = arvoreSimetricas(raiz1, raiz2);
                     if(verificaRaiz == 0)
                     {
-                        printf("As raizes n„o s„o simetricas\n");
+                        printf("As raizes n√£o s√£o simetricas\n");
                         system("pause");
                     }
                     else if (verificaRaiz == 1)
                     {
-                        printf("As raizes s„o simetricas\n");
+                        printf("As raizes s√£o simetricas\n");
                         system("pause");
                     }
                     system("cls");
@@ -382,13 +379,13 @@ int main()
                 case 13:
                     if(!raiz1)
                     {
-                        printf("Arvore 1 est· vazia\n");
+                        printf("Arvore 1 est√° vazia\n");
                         system("pause");
                         break;
                     }
                     if(!raiz2)
                     {
-                        printf("Arvore 2 est· vazia\n");
+                        printf("Arvore 2 est√° vazia\n");
                         system("pause");
                         break;
                     }
@@ -397,7 +394,7 @@ int main()
                     verificaRaiz = consultaArvores(raiz1, raiz2, valor);
                     if(verificaRaiz == 0)
                     {
-                        printf("O valor n„o se encontra nas arvores\n");
+                        printf("O valor n√£o se encontra nas arvores\n");
                         system("pause");
                     }
                     else if(verificaRaiz == 1)
@@ -418,7 +415,7 @@ int main()
                     system("cls");
                     break;
                 default:
-                    printf("Numero Inv·lido");
+                    printf("Numero Inv√°lido");
                 case 0:
                     break;
             }
@@ -427,7 +424,7 @@ int main()
     return (0);
 }
 
-void insere(no **raiz, int valor, int *flag)//funÁ„o que insere valores na arvore
+void insere(no **raiz, int valor, int *flag)//fun√ß√£o que insere valores na arvore
 {
     no *aux1, *aux2;
 
@@ -542,7 +539,7 @@ int mydel(no **x)
      }
 }
 
-void remover(no **raiz, int valor)//funÁ„o onde remove valores da arvore
+void remover(no **raiz, int valor)//fun√ß√£o onde remove valores da arvore
 {
     //no *aux;
 
@@ -564,11 +561,11 @@ void remover(no **raiz, int valor)//funÁ„o onde remove valores da arvore
     }
     else
     {
-        printf("¡rvore vazia\n");
+        printf("√Årvore vazia\n");
     }
 }
 
-void ordem(no *raiz) //funÁ„o para fazer a percuss„o em ordem
+void ordem(no *raiz) //fun√ß√£o para fazer a percuss√£o em ordem
 {
     if(raiz != NULL)
     {
@@ -578,7 +575,7 @@ void ordem(no *raiz) //funÁ„o para fazer a percuss„o em ordem
     }
 }
 
-void preOrdem(no *raiz)//funÁ„o para fazer a percuss„o em prÈ ordem
+void preOrdem(no *raiz)//fun√ß√£o para fazer a percuss√£o em pr√© ordem
 {
     if(raiz != NULL)
     {
@@ -588,7 +585,7 @@ void preOrdem(no *raiz)//funÁ„o para fazer a percuss„o em prÈ ordem
     }
 }
 
-void posOrdem(no *raiz)//funÁ„o para fazer a percuss„o em pÛs ordem
+void posOrdem(no *raiz)//fun√ß√£o para fazer a percuss√£o em p√≥s ordem
 {
     if(raiz != NULL)
     {
@@ -643,7 +640,7 @@ no_fila *dequeue(no_fila **fila)
          }
 }
 
-void largura (no *raiz) //funÁ„o que verifica a largura da arvore
+void largura (no *raiz) //fun√ß√£o que verifica a largura da arvore
 {
      no_fila *fila = NULL;
      no_fila * aux;
@@ -658,7 +655,7 @@ void largura (no *raiz) //funÁ„o que verifica a largura da arvore
      printf("\n");
 }
 
-int altura(no *raiz)//funÁ„o uqe verifica a altura da raiz
+int altura(no *raiz)//fun√ß√£o uqe verifica a altura da raiz
 {
     if(raiz == NULL)
         return -1;
@@ -673,13 +670,13 @@ int altura(no *raiz)//funÁ„o uqe verifica a altura da raiz
     }
 }
 
-int mediaTotal(no *raiz) //funÁ„o para verificar a mÈdia da raiz
+int mediaTotal(no *raiz) //fun√ß√£o para verificar a m√©dia da raiz
 {
     if(raiz == NULL) return (0);
     return(raiz->chave + mediaTotal(raiz->esq) + mediaTotal(raiz->dir));
 }
 
-int umFilho(no *raiz) //funÁ„o para verificar o total de nÛs com um filho
+int umFilho(no *raiz) //fun√ß√£o para verificar o total de n√≥s com um filho
 {
     if(!raiz) return(0);
     if((raiz->esq == NULL) && (raiz->dir == NULL)) return (0);
@@ -687,7 +684,7 @@ int umFilho(no *raiz) //funÁ„o para verificar o total de nÛs com um filho
     return(umFilho(raiz->esq) + umFilho(raiz->dir));
 }
 
-int doisFilhos(no *raiz) //funÁ„o para verificar o total de nÛs com dois filhos
+int doisFilhos(no *raiz) //fun√ß√£o para verificar o total de n√≥s com dois filhos
 {
     int quant = 0;
     no *aux;
@@ -709,7 +706,7 @@ int doisFilhos(no *raiz) //funÁ„o para verificar o total de nÛs com dois filhos
     return(quant);
 }
 
-int totalNos(no *raiz)//verificar total de nÛs na arvores
+int totalNos(no *raiz)//verificar total de n√≥s na arvores
 {
     if(!raiz) return(0);
     while((raiz->esq == NULL) && (raiz->dir == NULL))
@@ -729,7 +726,7 @@ int totalFolhas(no *raiz)//total de folhas em arvores
     return(totalFolhas(raiz->esq) + totalFolhas(raiz->dir));
 }
 
-int consultaMaior(no *raiz)//a funÁ„o que consulta o maior numero na arvore
+int consultaMaior(no *raiz)//a fun√ß√£o que consulta o maior numero na arvore
 {
     no *aux;
     aux = raiz;
@@ -744,7 +741,7 @@ int consultaMaior(no *raiz)//a funÁ„o que consulta o maior numero na arvore
      }
 }
 
-int consultaMenor(no *raiz)//funÁ„o que consulta o menor numero na arvore
+int consultaMenor(no *raiz)//fun√ß√£o que consulta o menor numero na arvore
 {
     no *aux;
     aux = raiz;
@@ -759,7 +756,7 @@ int consultaMenor(no *raiz)//funÁ„o que consulta o menor numero na arvore
      }
 }
 
-int arvoreIguais(no *raiz1, no *raiz2) // funÁ„o que consulta se as arvores s„o iguais
+int arvoreIguais(no *raiz1, no *raiz2) // fun√ß√£o que consulta se as arvores s√£o iguais
 {
     if(raiz1 == NULL && raiz2==NULL) return 1;
     if(raiz1 == NULL || raiz2==NULL) return 0;
@@ -771,7 +768,7 @@ int arvoreIguais(no *raiz1, no *raiz2) // funÁ„o que consulta se as arvores s„o 
     return 1;
 }
 
-int arvoresSimilares(no *raiz1, no *raiz2) // funÁ„o que consulta se as arvores s„o similares
+int arvoresSimilares(no *raiz1, no *raiz2) // fun√ß√£o que consulta se as arvores s√£o similares
 {
     int quantR1 = 1;
     int quantR2 = 1;
@@ -792,7 +789,7 @@ int arvoresSimilares(no *raiz1, no *raiz2) // funÁ„o que consulta se as arvores 
     else return 0;
 }
 
-int arvoreSimetricas(no *raiz1, no *raiz2)// funÁ„o que consulta se as arvores s„o simÈtricas
+int arvoreSimetricas(no *raiz1, no *raiz2)// fun√ß√£o que consulta se as arvores s√£o sim√©tricas
 {
     if(raiz1 == NULL && raiz2==NULL) return 1;
     if(raiz1 == NULL || raiz2==NULL) return 0;
@@ -804,7 +801,7 @@ int arvoreSimetricas(no *raiz1, no *raiz2)// funÁ„o que consulta se as arvores s
     return 1;
 }
 
-int consulta(no* raiz, int valor)// faz a consulta se o numero est· na arvores
+int consulta(no* raiz, int valor)// faz a consulta se o numero est√° na arvores
 {
     if (raiz == NULL) return (0);
     else if (raiz->chave == valor) return (1);
@@ -812,7 +809,7 @@ int consulta(no* raiz, int valor)// faz a consulta se o numero est· na arvores
     else return(consulta (raiz->dir, valor));
 }
 
-int consultaArvores(no *raiz1, no *raiz2, int valor) // funÁ„o que retorna se o valor est· em uma ou nas duas arvores
+int consultaArvores(no *raiz1, no *raiz2, int valor) // fun√ß√£o que retorna se o valor est√° em uma ou nas duas arvores
 {
     int consR1 = consulta(raiz1, valor);
     int consR2 = consulta(raiz2, valor);
